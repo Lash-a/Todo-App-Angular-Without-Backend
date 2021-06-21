@@ -1,0 +1,42 @@
+<div class="desc-container">
+    <div class="add-tasks">
+        <input type="text" 
+        placeholder="Enter task here"
+        [(ngModel)]="todo.name"
+        >
+
+        <button class="btn"
+        [disabled]="todo.name === ''"
+        (click)="addItem()">Add</button>
+    </div>
+
+    <div class="description">
+
+        <table>
+            <tr>
+                <th class="heading-style">Description <span id="done" class="heading-style">Done</span></th>
+            </tr>
+            <tr>
+                <td #f 
+                style="position: relative; display: block; border-top: none;" *ngFor="let todos of todoService.todoArr; let i = index">
+                    {{todos}}
+                    <span id="delete-todo"
+                    (click)="removeToDo(i,$event)"
+                    >X</span>
+
+                    <input type="checkbox"
+                    (click)="checkIfClicked($event)"
+                    >
+                </td>
+            </tr>
+        </table>
+
+    </div>
+    
+</div>
+
+
+
+
+
+

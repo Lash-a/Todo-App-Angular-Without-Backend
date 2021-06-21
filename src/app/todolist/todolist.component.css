@@ -1,0 +1,115 @@
+.desc-container{
+    max-width: 800px;
+    width: 100%;
+    min-height: calc(100vh - 70px - 50vh);
+    margin: 0 auto;
+    background: #fff;
+}
+
+.add-tasks{
+    text-align: center;
+    padding: 3em;
+}
+
+.add-tasks input {
+    width: 50%;
+    background: snow;
+    height: 35px;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+
+.add-tasks button{
+    width: 100px;
+    background: #007bff;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin-left: 25px;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.add-tasks button:disabled{
+    opacity: 0.3;
+}
+
+/* headers */
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+  
+td, th {
+    border: 1px solid #007bff;
+    text-align: left;
+    padding: 8px;
+    font-family: cursive;
+    letter-spacing: 0.5px;
+    font-size: 18px;
+}
+  
+tr:nth-child(even) {
+    /* background-color: #e3e3e3; */
+    background: #eeeeee;
+}
+
+.checkbox{
+    border: 1 px solid #000;
+}
+
+table input{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: calc(50% - 10px);
+    left: calc(100% - 100px);
+}
+
+#done{
+    text-align: center;
+    width: 25%;
+    position: absolute;
+    top: 0;
+    left: calc(100% - 199.5px);
+    border-left: 1px solid #007bff;
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+}
+
+.heading-style{
+    border: 1px solid #007bff;
+    text-align: left;
+    padding: 8px;
+    font-family: system-ui;
+    letter-spacing: 1px;
+    font-weight: 700;
+    font-size: 25px;
+
+    position: relative;
+}
+
+/* tasks counter */
+
+/* Delete */
+
+#delete-todo{
+    float: right;
+    margin-right: 15px;
+    cursor: pointer;
+    color: #007bff;
+}
+
+.checked{
+    text-decoration: line-through;
+}
+
+.notChecked{
+    text-decoration: none;
+}
+
